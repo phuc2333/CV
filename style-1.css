@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.semi_bold{
+    font-weight: 500;
+    font-size: 16px;
+}
+.resume{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+.resume .resume_left{
+    width: 280px;
+    background: #0bb5f4;
+}
+.resume .resume_left .resume_profile img{
+    width: 100%;
+    height: 100%;
+}
+.resume .resume_left .resume_content{
+    padding: 0 25px;
+}
+.resume .title{
+    margin-bottom: 20px;
+}
+.resume .resume_left .bold{
+    color: #fff
+}
+.resume .resume_left .regular{
+    color: #b1eaff;
+}
+.resume .resume_item{
+    padding: 25px 0;
+    border-top: 2px solid white;
+}
+.resume .resume_left .resume_item:last-child{
+    border-bottom: 0px;
+}
+.resume .resume_left ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.resume .resume_left ul li:last-child{
+      margin-bottom: 0px;
+}
+.resume .resume_left ul li .icon{
+       width: 35px;
+       height: 35px;
+       background: #fff;
+       color: #0bb5f4;
+       border-radius: 50%;
+       margin-right: 15px;
+       font-size: 16px;
+       position: relative;
+}
+.resume .icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.resume .resume_left ul li data{
+    color: #b1eaff;
+}
+.resume .resume_left .resume_skill ul li{
+    color: #b1eaff;
+    justify-content: space-between;
+}
+.resume .resume_left .resume_skill ul li .skill_name{
+    width: 25%;
+}
+.resume .resume_left .resume_skill ul li .skill_progress{
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background: #009fd9;
+    position: relative;
+}
+.resume .resume_left .resume_skill ul li .skill_per{
+     width: 15%;
+}
+.resume .resume_left .resume_skill ul li .skill_progress span{
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 100%;
+         background: #fff;
+}
+.resume_profile img{
+    border-radius: 50% ;
+}
+.data a:hover{
+    color: deeppink;
+}
+.resume .resumb_right{
+   float: right;
+   clear: both;
+   background-color: ghostwhite;
+   width: 520px;
+   padding: 25px;
+}
+.resumb-item:not(.resumb-hobby){
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #0bb5f4;
+}
+.resume .resumb_right .bol{
+    color: #0bb5f4;
+    font-size: 30px;
+}
+.resume .resumb_right .resumb-work ul,
+.resume .resumb_right .resumb-education ul
+{
+   padding-left: 40px;
+   overflow: hidden;
+}
+.resumb-item:not(.resumb-hobby) ul li{
+    list-style-type:circle;
+    padding-left: 10px;
+    border-left: 2px solid #0bb5f4;
+}
+.date{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.resume .resumb_right .resumb-hobby ul {
+    display: flex;
+    justify-content: space-between;
+}
+.resume .resumb_right .resumb-hobby ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color: #0bb5f4;
+}
+.resume .resumb_right .resumb-hobby ul li i{
+    font-size: 30px;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+}
+.resume .resumb_right .resumb-hobby ul li::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -52px;
+    width: 50px;
+    height: 2px;
+    background: #0bb5f4;
+}
+.resume .resumb_right .resumb-hobby ul li:last-child::before{
+    display: none;
+}
